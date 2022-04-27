@@ -1,0 +1,8 @@
+version: '3'
+services:
+  ezbash:
+    
+    image: ezbash
+    build: ./ezbash
+    ports:
+      - "9999:9999"

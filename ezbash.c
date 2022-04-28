@@ -218,9 +218,6 @@ void overwite_file(Node *src_pointer, Node *tar_pointer)
 	}
 	else if (src_pointer->content && tar_pointer->content)
 	{   // overwrite
-		// may be vunlerable, a heap overflow or something else?
-		// let me make it safe temporarily now
-		// in fact not totally safe, Im not sure
 		int src_len = strlen(src_pointer->content);
 		int tar_len = strlen(tar_pointer->content);
 		if (src_len <= tar_len)
